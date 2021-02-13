@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: white;
+}
+
+/* Header Styles */
+header {
+    background-color: #2b3e44a2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+header h1 a {
+    padding-left: 20px;
+    margin: 10px 10px 10px;
+    Font-weight: bold;
+    font-size: 45px;
+    margin: 0;
+    color: black;
+    }
+    
+
+header nav {
+    margin: 10px 0;
+    padding: 0 55px;
+    }
+
+header nav ul li a {
+    padding: 5px 10px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    }
+
+
+/* Hero */
+.hero {
+    background-image: url(assets/images/bio-pic.jpg);
+    width: 100%;
+    height: 350px;
+    background-position: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero h2 {
+    font-weight: bold;
+    font-size: 32px;
+    background-color: #091a1fa2;
+    color: black;
+    padding: 5px;
+    margin: 0px;
+    display: flex;
+    }
+
+.hero img {
+    border-radius: 6%;
+    width: 215px;
+    height: auto;
+    }
+
+.subtitle {
+    width: 80%;
+    color: #2c3746;
+    font-size: 10px;
+    line-height: 5;
+    }
+
+/* About Me */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.about-me h2 {
+    font-size: 36px;
+    width: 20%;
+    display: flex;
+    border-right: solid 5px;
+    text-shadow: 0 0 5px #091a1fa2;
+}
+
+.about-me p {
+    width: 70%;
+    margin-left: 15px;
+   }
+
+/* Work */
+.work  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.section-title {
+    font-size: 38px;
+    width: 20%;
+    border-right: solid 5px;
+    margin: 20px 0;
+    text-shadow: 0 0 5px #091a1fa2;
+}
+.section-title h2 {
+    justify-content: flex-start;
+}
+.content {
+    width: 78%;
+    margin: 20px 0;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 15px;
+    width: 100%;
+    grid-auto-flow: dense;
+}
+.item-1 {
+    height: 410px;
+    background-image: url(images/KLamar.jpg);
+    background-size: 100% 100%;
+    grid-column:  span 2;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0.5;
+    border: solid 2px #091a1fa2;
+ }
+.item-2 {
+    height: 200px;
+    background-image: url(images/Horiseon.png);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0.5;
+    border: solid 2px #091a1fa2;
+}
+.item-3 {
+    height: 200px;
+    background-image: url(images/Scratchy.JPG);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0.5;
+    border: solid 2px #091a1fa2;
+}
+.item-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0.5;
+    border: solid 2px #091a1fa2;
+}
+.item-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0.5;
+    border: solid 2px #091a1fa2;
+}
+.item-1:hover, .item-2:hover, .item-3:hover, .item-4:hover, .item-5:hover {
+    opacity: 1;
+ }
+.grid a {
+    text-decoration: none;
+    color: black;
+}
+.grid h3, .grid p{
+    background-color: #091a1fa2;
+    width: 100%;
+}
+
+/* Contact Me*/
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+}
+.contact h2 {
+    font-size: 36px;
+    width: 20%;
+    border-right: solid 5px;
+    text-shadow: 0 0 5px gray;
+}
+.contact-info a {
+    margin-left: 50px;
+    text-align: center;
+    }
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #091a1fa2;
+    width: 100%;
+    padding: 40px 35px;
+}
+footer h2 {
+    color: #2a3544;
+    font-size: 32px;
+    margin: 0;
+}
+
+/* MEDIA QUERIES */
+/* MEDIA QUERY FOR SMALLERTHAN 980PX */
+@media screen AND (max-width: 980px) {
+    header {
+        padding: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    }
+    .contact h2 {
+        font-size: 38px;
+    }
+    .item-1, .item-2, .item-3, .item-4, .item-5 {
+        opacity: 1;
+    }
+}
+/* MEDIA QUERY FOR SMALLER THAN 768PX */
+@media screen and (max-width: 768px) {
+    .hero h2 {
+        font-size: 20px;
+    }
+    .hero img {
+        width: 120px;
+    }
+    .about-me h2 {
+        font-size: 32px;
+        flex: 1 100%;
+        border-bottom: solid 3px;
+        border-right: none;
+        text-align: center;
+        justify-content: center;
+    }   
+    .about-me {
+        font-size: 15px;
+        justify-content: center;
+    }
+    .section-title {
+        flex: 1 100%;
+        border-bottom: solid 3px;
+        border-right: none;
+        justify-content: flex-start;
+    }
+    .content {
+        width: 100%;  
+    }
+    .grid {
+        margin: 0;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+}
+/* MEDIA QUERY FOR SMALLER THAN 550 */
+@media screen and (max-width: 550px) {
+    .hero h2 {
+        font-size: 20px;
+    }
+    .hero img {
+        width: 120px;
+    }
+    .about-me h2 {
+        font-size: 32px;
+        flex: 1 100%;
+        border-bottom: solid 3px;
+        border-right: none;
+        text-align: center;
+        justify-content: center;
+    }   
+    .about-me {
+        font-size: 15px;
+        justify-content: center;
+    }
+    .section-title {
+        flex: 1 100%;
+        border-bottom: solid 3px;
+        border-right: none;
+        text-align: center;
+        justify-content: center;
+    }
+    .content {
+        width: 100%;  
+    }
