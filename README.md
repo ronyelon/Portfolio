@@ -24,9 +24,9 @@
 <p>THEN I am presented with a responsive layout that adapts to my viewport</p>
 
 <p>
-    <img src="assets/images/Screenshot1.PNG" />
+    <img src="images/Screenshot1.PNG" />
 </p>
 
 <p>
-    <img src="assets/images/Screenshot2.PNG" />
+    <img src="images/Screenshot2.PNG" />
 </p>
