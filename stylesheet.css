@@ -132,7 +132,7 @@ header nav ul li a {
 }
 .item-1 {
     height: 410px;
-    background-image: url(images/KLamar.jpg);
+    background-image: url(images/weather-dashboard-mockup.png);
     background-size: 100% 100%;
     grid-column:  span 2;
     grid-row: span 2;
@@ -154,7 +154,7 @@ header nav ul li a {
 }
 .item-3 {
     height: 200px;
-    background-image: url(images/Scratchy.JPG);
+    background-image: url(images/Proj1-MockUp.PNG);
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -164,7 +164,7 @@ header nav ul li a {
 }
 .item-4 {
     height: 200px;
-    background-image: url(images/weather-dashboard-mockup.png);
+    background-image: url(images/KLamar.jpg);
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -319,4 +319,6 @@ footer h2 {
     }
     .content {
         width: 100%;  
-    }}
+    }
+
+    
